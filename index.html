@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rajveer Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Have a fantastic day!</h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajveer Singh Rajput</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background:radial-gradient(135deg, #ffcccc, #ffe6e6);
+            overflow: hidden;
+font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            position: relative;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .button {
+            width: 200px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            position: relative;
+            box-shadow: 0 10px 3px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .instagram {
+            background: radial-gradient(circle, #f58529, #dd2a7b, #8134af);
+        }
+
+        .twitter {
+            background: #1da1f2;
+        }
+
+        .facebook {
+            background: #1877f2;
+        }
+
+        .snapchat {
+            background: #fffc00;
+            color: black;
+        }
+
+        .floating {
+            position: absolute;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .balloon {
+            width: 60px;
+            height: auto;
+        }
+
+        .rose {
+            width: 50px;
+            height: auto;
+        }
+
+        .heart {
+            width: 40px;
+            height: auto;
+        }
+
+        .hoarding {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(-28vh) translateX(0);
+            }
+            50% {
+                transform: translateY(-37vh) translateX(28px);
+            }
+            100% {
+                transform: translateY(-31vh) translateX(28px);
+            }
+        }
+
+        .name-overlay {
+            position: absolute;
+            bottom: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/rajveersinghr4jput?igsh=MThvb2s3dHFranlhOA==" class="button instagram">Instagram</a>
+            <a href="https://x.com/nocomplaintme?t=J3mAY4e7xWKwwYwGZ2Gv_g&s=09" class="button twitter">Twitter</a>
+            <a href="https://www.facebook.com/profile.php?id=100009396534388&mibextid=ZbWKwL" class="button facebook">Facebook</a>
+            <a href="https://www.snapchat.com/add/rajveersing1911?share_id=jhY3ZaqrMc0&locale=en-US" class="button snapchat">Snapchat</a>
+        </div>
+
+        <!-- Floating elements with PNG links -->
+        <div class="floating hoarding" style="left: 20%; animation-delay: 1s;">Rajveer</div>
+        <div class="floating hoarding" style="left: 34%; animation-delay: 3s;">❤️</div>
+        <div class="floating hoarding" style="left: 45%; animation-delay: 5s;">Singh</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajveer</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: radial-gradient(#ffffff,#87ceeb,#ffffff); /* Sky background */
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: 0; /* Start from the bottom */
+      animation: floatUp 6s linear infinite, fadeOut 6s ease-in-out;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: white;
+    }
+
+    .balloon .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    /* 3D Balloon Shape */
+    .balloon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 92%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 20%, #ff6f61, #ff4040);
+      border-radius: 50%;
+      box-shadow: 40px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .string {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background: gray;
+      transform: translateX(-50%);
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-110vh); /* Float upward off-screen */
+      }
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Create floating 3D balloons
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.classList.add('balloon');
+
+      // Add text to the balloon
+      const text = document.createElement('div');
+      text.classList.add('text');
+      text.innerText = 'Rajveer';
+      balloon.appendChild(text);
+
+      // Add string to the balloon
+      const string = document.createElement('div');
+      string.classList.add('string');
+      balloon.appendChild(string);
+
+      // Random size
+      const size = Math.random() * 30 + 70 + 'px';
+      balloon.style.width = size;
+      balloon.style.height = size;
+
+      // Random horizontal position
+      balloon.style.left = Math.random() * window.innerWidth + 'px';
+
+      // Random animation duration
+      balloon.style.animationDuration = Math.random() * 3 + 4 + 's';
+
+      document.body.appendChild(balloon);
+
+      // Remove balloon after animation
+      setTimeout(() => {
+        balloon.remove();
+      }, 6000);
+    }
+
+    // Generate balloons every 700ms
+    setInterval(() => {
+      createBalloon();
+    }, 400);
+  </script>
+</body>
+</html>
+        <!-- Name overlay -->
+        <div class="name-overlay">Rajveer Singh Rajput</div>
+    </div>
+</body>
+</html>
